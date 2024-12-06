@@ -13,11 +13,11 @@
     <!-- <h2 class="bg-yellow-400 text-red-700">hello world</h2> -->
 
     <!-- SECTION ONE -->
-    <section class="h-screen px-7 md:px-14 lg:px-24">
+    <section id="home" class="h-screen px-7 md:px-14 lg:px-24">
         <header class="bg-white">
             <nav class="flex justify-between items-center h-14 xl:h-20">
                 <div>
-                    <img class="w-8 h-8 rounded-full xl:w-10 xl:h-10" src="./img/logo.jpg" alt="...">
+                   <a href="#home"><img class="w-8 h-8 rounded-full xl:w-10 xl:h-10" src="./img/logo.jpg" alt="..."></a>
                 </div>
                 <div class="nav-links duration-500 lg:static absolute bg-[#fbf0e4] lg:bg-white lg:min-h-fit min-h-[60vh] left-0 top-[-100%] lg:w-auto lg:mr-28 xl:mr-72 w-full flex items-center px-5">
                 <!-- <div class="absolute bg-blue-500 min-h-[60vh] left-0 top-[9%] w-full flex items-center text-center"> -->
@@ -37,20 +37,20 @@
         </header>
 
         <!-- <div class="flex m-auto h-auto items-center justify-center"> -->
-        <div style="background-image: url('img/background.jpg');" class="h-full">
+        <div style="background-image: url('img/background.jpg'); width: 100%;" class="h-full">
             <div class="h-[86vh] flex items-center justify-center lg:w-7/12 bg-[url('/img/bg.jpg')]" style="background-image: url('./img/background.jpg'); width: 100%; background-repeat: no-repeat; background-size: cover;">
                 <div>
-                    <h2 class="text-4xl md:text-4xl lg:w-6/12 xl:text-5xl">
+                    <h2 class="text-4xl md:text-4xl md:w-6/12 lg:w-6/12 xl:text-5xl">
                         Making time a good time by making food the good food.
                     </h2>
-                    <p class="pt-10 pb-7 text-justify md:pt-20 md:pb-16 lg:w-6/12 lg:pt-10 lg:pb-7">
+                    <p class="pt-10 pb-7 text-justify md:pt-10 md:pb-10 md:w-6/12 lg:w-6/12 lg:pt-10 lg:pb-7">
                         Welcome to a haven for food lovers!
                         We craft fresh, flavorful dishes to satisfy every craving.
                         Join us for a delicious journey you’ll never forget.
                     </p>
-                    <div class="flex justify-between md:justify-normal gap-10">
-                        <button id="#menu" class="bg-[#dc780b] text-white py-3 px-5 text-sm hover:scale-125 duration-500 md:text-2xl rounded-md lg:text-base lg:py-1 lg:px-2 xl:py-4 xl:px-6">Order Now</button>
-                        <button id="#menu" class=" text-[#dc780b] border-2 border-[#dc780b] rounded-md py-3 px-5 text-sm md:text-2xl hover:scale-125 duration-500 lg:text-base lg:py-1 lg:px-2 xl:py-4 xl:px-6">Food Details</button>
+                    <div class="flex md:justify-normal gap-10">
+                        <button id="#menu" class="bg-[#dc780b] text-white hover:text-[#dc780b] border-2 hover:bg-white border-[#dc780b] py-3 px-5 text-sm duration-700 md:text-96 rounded-md lg:text-base lg:py-1 lg:px-2 xl:py-4 xl:px-6">Order Now</button>
+                        <button id="#menu" class=" text-[#dc780b] border-2 border-[#dc780b] hover:bg-[#dc780b] hover:text-white rounded-md py-3 px-5 text-sm md:text-96 duration-700 lg:text-base lg:py-1 lg:px-2 xl:py-4 xl:px-6">Food Details</button>
                     </div>
                 </div>
             </div>
@@ -64,32 +64,38 @@
                 <h3 class="text-[#dc780b] text-xl pb-3">Features</h3>
                 <h5 class="capitalize font-bold lg:text-2xl">Food with a new passion</h5>
             </div>
-            <div class="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-10 lg:grid-cols-3">
+            <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-10 md:grid-cols-2 md:gap-10 lg:grid-cols-3">
                 <div class="mb-3">
                     <!-- <div class="text-center block ml-auto mr-auto w-4/12"> -->
                         <img src="./img/quality.jpg" alt="" class="w-12 h-12 rounded-full text-center block shadow-lg ml-auto mr-auto">
                     <!-- </div> -->
-                    <p class="text-center font-bold pt-2 md:pt-5 md:pb-1">Quality Food</p>
-                    <p class="text-justify lg:text-center">
-                        Experience the taste of quality with every bite, 
-                        made from fresh, wholesome ingredients.
-                    </p>
+                    <div class="hover:bg-[#fbf0e4] duration-500">
+                        <p class="text-center font-bold pt-2 md:pt-5 md:pb-1">Quality Food</p>
+                        <p class="text-justify sm:px-6 lg:px-0 lg:text-center pb-5">
+                            Experience the taste of quality with every bite, 
+                            made from fresh, wholesome ingredients.
+                        </p>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <img src="./img/delivery.jpg" alt="" class="w-12 h-12 rounded-full shadow-lg text-center block ml-auto mr-auto">
-                    <p class="text-center font-bold pt-2 md:pt-5 md:pb-1">Food Delivery</p>
-                    <p class="text-justify lg:text-center">
-                        Delicious meals, delivered fast, fresh, and 
-                        straight to your doorstep.
-                    </p>
+                    <div class="hover:bg-[#fbf0e4] duration-500">
+                        <p class="text-center font-bold pt-2 md:pt-5 md:pb-1">Food Delivery</p>
+                        <p class="text-justify sm:px-6 lg:px-0 lg:text-center pb-5">
+                            Delicious meals, delivered fast, fresh, and 
+                            straight to your doorstep.
+                        </p>
+                    </div>
                 </div>
                 <div>
                     <img src="./img/taste.jpg" alt="" class="w-12 h-12 rounded-full text-center shadow-lg block ml-auto mr-auto">
-                    <p class="text-center font-bold pt-2 md:pt-5 md:pb-1">Super Taste</p>
-                    <p class="text-justify lg:text-center">
-                        Craving something delicious? Get your favorite 
-                        meals delivered fresh and fast, right to your door.
-                    </p>
+                    <div class="hover:bg-[#fbf0e4] duration-500">
+                        <p class="text-center font-bold pt-2 md:pt-5 md:pb-1">Super Taste</p>
+                        <p class="text-justify sm:px-6 lg:px-0 lg:text-center pb-5">
+                            Craving something delicious? Get your favorite 
+                            meals delivered fresh and fast, right to your door.
+                        </p>
+                    </div>
                 </div>
             </div>
             
@@ -131,9 +137,9 @@
                 and passion!
             </p>
         </div>
-        <div class="pt-5 px-7 grid grid-cols-1 md:grid-cols-2 md:gap-10 md:px-0 lg:grid-cols-3 lg:gap-7">
-            <div class="mt-4 border-2 rounded-tl-3xl">
-                <img src="./img/vegie.jpg" alt="" class="min-w-full max-h-full rounded-tl-3xl rounded-br-3xl">
+        <div class="pt-5 px-7 grid grid-cols-1 sm:grid-cols-2 sm:gap-6 md:grid-cols-2 md:gap-10 md:px-0 lg:grid-cols-3 lg:gap-7">
+            <div class="mt-4 border-2 rounded-tl-3xl rounded-3xl">
+                <img src="./img/vegie.jpg" alt="" class="min-w-full max-h-full rounded-3xl rounded-tl-3xl rounded-br-3xl">
                 <div class="p-5">
                     <div class="flex justify-between pb-2">
                         <p>Chicken</p>
@@ -154,8 +160,8 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-11 border-2 md:mt-4 rounded-tl-3xl">
-                <img src="./img/salad.jpg" alt="" class="min-w-full max-h-full rounded-tl-3xl rounded-br-3xl">
+            <div class="mt-11 border-2 sm:mt-4 md:mt-4 rounded-tl-3xl rounded-3xl">
+                <img src="./img/salad.jpg" alt="" class="min-w-full max-h-full rounded-3xl rounded-tl-3xl rounded-br-3xl">
                 <div class="p-5">
                     <div class="flex justify-between pb-2">
                         <p>Salads</p>
@@ -177,8 +183,8 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-11 border-2 md:mt-2 lg:mt-4 rounded-tl-3xl">
-                <img src="./img/burger.jpg" alt="" class="min-w-full max-h-full rounded-tl-3xl rounded-br-3xl">
+            <div class="mt-11 border-2 sm:mt-4 md:mt-2 lg:mt-4 rounded-tl-3xl rounded-3xl">
+                <img src="./img/burger.jpg" alt="" class="min-w-full max-h-full rounded-tl-3xl rounded-br-3xl rounded-3xl">
                 <div class="p-5">
                     <div class="flex justify-between pb-2">
                         <p>Burger</p>
@@ -200,8 +206,8 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-11 border-2 md:mt-2 rounded-tl-3xl">
-                <img src="./img/delmonic.jpg" alt="" class="min-w-full max-h-full rounded-tl-3xl rounded-br-3xl">
+            <div class="mt-11 border-2 sm:mt-4 md:mt-2 rounded-tl-3xl rounded-3xl">
+                <img src="./img/delmonic.jpg" alt="" class="min-w-full max-h-full rounded-3xl rounded-tl-3xl rounded-br-3xl">
                 <div class="p-5">
                     <div class="flex justify-between pb-2">
                         <p>Delmonic Steak Dish</p>
@@ -224,8 +230,8 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-11 border-2 md:mt-2 rounded-tl-3xl">
-                <img src="./img/mutton.jpg" alt="" class="min-w-full max-h-full rounded-tl-3xl rounded-br-3xl">
+            <div class="mt-11 border-2 sm:mt-4 md:mt-2 rounded-tl-3xl rounded-3xl">
+                <img src="./img/mutton.jpg" alt="" class="min-w-full max-h-full rounded-3xl rounded-tl-3xl rounded-br-3xl">
                 <div class="p-5">
                     <div class="flex justify-between pb-2">
                         <p>Mutton Pepper Fry</p>
@@ -246,8 +252,8 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-11 border-2 md:mt-2 lg:mt-2 rounded-tl-3xl">
-                <img src="./img/peach.jpg" alt="" class="min-w-full max-h-full rounded-tl-3xl rounded-br-3xl">
+            <div class="mt-11 border-2 sm:mt-4 md:mt-2 lg:mt-2 rounded-tl-3xl rounded-3xl">
+                <img src="./img/peach.jpg" alt="" class="min-w-full max-h-full rounded-3xl rounded-tl-3xl rounded-br-3xl">
                 <div class="p-5">
                     <div class="flex justify-between pb-2">
                         <p>Peach Melba Dish</p>
@@ -291,7 +297,7 @@
             </div>
             <div class="relative">
                 <ul id="slider">
-                    <li class="h-[70vh] relative md:h-[30vh] lg:h-[50vh]">
+                    <li class="h-[50vh] relative sm:h-[43vh] md:h-[43vh] lg:h-[50vh]">
                         <div class="absolute top-0 left-0 h-full w-full flex">
                             <div class="text-black my-auto w-full text-center">
                                 <img class="w-14 h-14 rounded-full text-center block bg-contain ml-auto mr-auto" src="./img/review 4.jpg" alt="">
@@ -312,7 +318,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="h-[70vh] relative hidden md:h-[30vh] lg:h-[50vh]">
+                    <li class="h-[50vh] relative hidden sm:h-[43vh] md:h-[43vh] lg:h-[50vh]">
                         <div class="absolute top-0 left-0 h-full w-full flex">
                             <div class="text-black my-auto w-full text-center">
                                 <img class="w-14 h-14 rounded-full text-center block ml-auto mr-auto" src="./img/review 3.jpg" alt="">
@@ -333,7 +339,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="h-[70vh] relative hidden md:h-[30vh] lg:h-[50vh]">
+                    <li class="h-[50vh] relative hidden sm:h-[43vh] md:h-[43vh] lg:h-[50vh]">
                         <div class="absolute top-0 left-0 h-full w-full flex">
                             <div class="text-black my-auto w-full text-center">
                                 <img class="w-14 h-14 rounded-full text-center block ml-auto mr-auto" src="./img/review 2.jpg" alt="">
@@ -354,7 +360,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="h-[70vh] relative hidden md:h-[30vh] lg:h-[50vh]">
+                    <li class="h-[50vh] relative sm:h-[43vh] hidden md:h-[43vh] lg:h-[50vh]">
                         <div class="absolute top-0 left-0 h-full w-full flex">
                             <div class="text-black my-auto w-full text-center">
                                 <img class="w-14 h-14 rounded-full text-center block ml-auto mr-auto" src="./img/review 1.jpg" alt="">

@@ -13,8 +13,8 @@
     <!-- <h2 class="bg-yellow-400 text-red-700">hello world</h2> -->
 
     <!-- SECTION ONE -->
-    <section id="home" class="h-screen px-7 md:px-14 lg:px-24">
-        <header class="bg-white">
+    <section id="home" class="h-screen pl-7 md:px-14 lg:px-24">
+        <header class="bg-white pr-7">
             <nav class="flex justify-between items-center h-14 xl:h-20">
                 <div>
                    <a href="#home"><img class="w-8 h-8 rounded-full xl:w-10 xl:h-10" src="./img/logo.jpg" alt="..."></a>
@@ -30,27 +30,33 @@
                     </ul>
                 </div>
                 <div class="flex items-center gap-3">
-                    <button class="bg-[#dc780b] text-white text-sm px-2 py-1 my-1 rounded hover:scale-125 duration-500 xl:px-3 xl:py-2">Booking Now</button>
+                    <button class="bg-[#dc780b] text-white text-sm font-bold px-2 py-1 my-1 rounded hover:scale-125 duration-500 xl:px-3 xl:py-2">Booking Now</button>
                     <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-2xl cursor-pointer lg:hidden"></ion-icon>
                 </div>
             </nav>
         </header>
 
         <!-- <div class="flex m-auto h-auto items-center justify-center"> -->
-        <div style="background-image: url('img/background.jpg'); width: 100%;" class="h-full">
-            <div class="h-[86vh] flex items-center justify-center lg:w-7/12 bg-[url('/img/bg.jpg')]" style="background-image: url('./img/background.jpg'); width: 100%; background-repeat: no-repeat; background-size: cover;">
-                <div>
-                    <h2 class="text-4xl md:text-4xl md:w-6/12 lg:w-6/12 xl:text-5xl">
-                        Making time a good time by making food the good food.
-                    </h2>
-                    <p class="pt-10 pb-7 text-justify md:pt-10 md:pb-10 md:w-6/12 lg:w-6/12 lg:pt-10 lg:pb-7">
-                        Welcome to a haven for food lovers!
-                        We craft fresh, flavorful dishes to satisfy every craving.
-                        Join us for a delicious journey you’ll never forget.
-                    </p>
-                    <div class="flex md:justify-normal gap-10">
-                        <button id="#menu" class="bg-[#dc780b] text-white hover:text-[#dc780b] border-2 hover:bg-white border-[#dc780b] py-3 px-5 text-sm duration-700 md:text-96 rounded-md lg:text-base lg:py-1 lg:px-2 xl:py-4 xl:px-6">Order Now</button>
-                        <button id="#menu" class=" text-[#dc780b] border-2 border-[#dc780b] hover:bg-[#dc780b] hover:text-white rounded-md py-3 px-5 text-sm md:text-96 duration-700 lg:text-base lg:py-1 lg:px-2 xl:py-4 xl:px-6">Food Details</button>
+        <div>
+            <div style="background-image: url('img/background.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%;" class="h-full">
+                <div class="h-[86vh] pr-7 flex items-center justify-center lg:w-full">
+                    <div>
+                        <h2 class="font-semibold text-4xl md:text-4xl md:w-6/12 lg:w-6/12 xl:text-5xl">
+                            Making time a good time by making food the good food.
+                        </h2>
+                        <p class="pt-10 pb-7 text-justify md:pt-10 md:pb-10 md:w-6/12 lg:w-6/12 lg:pt-10 lg:pb-7">
+                            Welcome to a haven for food lovers.
+                            We craft fresh, flavorful dishes to satisfy every craving.
+                            Join us for a delicious journey you’ll never forget.
+                        </p>
+                        <div class="sm:flex md:justify-normal gap-10">
+                            <div>
+                                <button id="#menu" class="bg-[#dc780b] text-white hover:text-[#dc780b] border-2 hover:bg-transparent border-[#dc780b] font-bold py-3 px-5 w-full text-sm duration-700 md:text-96 rounded-md lg:text-base lg:py-1 lg:px-2 xl:py-4 xl:px-6">Order Now</button>
+                            </div>
+                            <div>
+                                <button id="#menu" class=" text-[#dc780b] border-2 border-[#dc780b] hover:bg-[#dc780b] hover:text-white rounded-md font-bold py-3 px-5 mt-5 w-full text-sm sm:mt-0 md:text-96 duration-700 lg:text-base lg:py-1 lg:px-2 xl:py-4 xl:px-6">Food Details</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -58,30 +64,30 @@
     </section>
 
     <!-- SECTION TWO -->
-    <section id="features" class="px-7 pt-20 pb-20 md:px-14 lg:px-24">
+    <section id="features" class="px-7 pt-20 pb-12 md:px-14 lg:px-24">
         <div>
-            <div class="text-center pb-5">
+            <div class="text-center pb-3">
                 <h3 class="text-[#dc780b] text-xl pb-3">Features</h3>
                 <h5 class="capitalize font-bold lg:text-2xl">Food with a new passion</h5>
             </div>
             <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-10 md:grid-cols-2 md:gap-10 lg:grid-cols-3">
-                <div class="mb-3">
+                <div class="">
                     <!-- <div class="text-center block ml-auto mr-auto w-4/12"> -->
                         <img src="./img/quality.jpg" alt="" class="w-12 h-12 rounded-full text-center block shadow-lg ml-auto mr-auto">
                     <!-- </div> -->
-                    <div class="hover:bg-[#fbf0e4] duration-500">
-                        <p class="text-center font-bold pt-2 md:pt-5 md:pb-1">Quality Food</p>
-                        <p class="text-justify sm:px-6 lg:px-0 lg:text-center pb-5">
+                    <div class="px-4 rounded-2xl mt-2 md:mt-5 py-3 md:py-5 hover:bg-[#fbf0e4] duration-500">
+                        <p class="text-center font-bold md:pb-1">Quality Food</p>
+                        <p class="text-justify sm:px-6 lg:px-0 lg:text-center">
                             Experience the taste of quality with every bite, 
                             made from fresh, wholesome ingredients.
                         </p>
                     </div>
                 </div>
-                <div class="mb-3">
+                <div class="">
                     <img src="./img/delivery.jpg" alt="" class="w-12 h-12 rounded-full shadow-lg text-center block ml-auto mr-auto">
-                    <div class="hover:bg-[#fbf0e4] duration-500">
-                        <p class="text-center font-bold pt-2 md:pt-5 md:pb-1">Food Delivery</p>
-                        <p class="text-justify sm:px-6 lg:px-0 lg:text-center pb-5">
+                    <div class="px-4 rounded-2xl mt-2 md:mt-5 py-3 md:py-5 hover:bg-[#fbf0e4] duration-500">
+                        <p class="text-center font-bold md:pb-1">Food Delivery</p>
+                        <p class="text-justify sm:px-6 lg:px-0 lg:text-center">
                             Delicious meals, delivered fast, fresh, and 
                             straight to your doorstep.
                         </p>
@@ -89,9 +95,9 @@
                 </div>
                 <div>
                     <img src="./img/taste.jpg" alt="" class="w-12 h-12 rounded-full text-center shadow-lg block ml-auto mr-auto">
-                    <div class="hover:bg-[#fbf0e4] duration-500">
-                        <p class="text-center font-bold pt-2 md:pt-5 md:pb-1">Super Taste</p>
-                        <p class="text-justify sm:px-6 lg:px-0 lg:text-center pb-5">
+                    <div class="px-4 rounded-2xl mt-2 md:mt-5 py-3 md:py-5 hover:bg-[#fbf0e4] duration-500">
+                        <p class="text-center font-bold md:pb-1">Super Taste</p>
+                        <p class="text-justify sm:px-6 lg:px-0 lg:text-center">
                             Craving something delicious? Get your favorite 
                             meals delivered fresh and fast, right to your door.
                         </p>
@@ -110,7 +116,7 @@
             </div>
             <div class="lg:w-3/6 lg:pt-8 xl:pt-16">
                 <h4 class="text-center text-[#dc780b] pb-3 text-xl lg:text-left">About Us</h4>
-                <p class="pb-5 capitalize font-bold text-center md:px-32 lg:px-0 lg:text-left lg:px-0 lg:text-2xl">
+                <p class="pb-3 capitalize font-bold text-center md:px-32 lg:px-0 lg:text-left lg:px-0 lg:text-2xl">
                     haring our love for delicious flavors and 
                     unforgettable dining experiences.
                 </p>
@@ -120,24 +126,24 @@
                     fresh, flavorful meals straight to your table, every time."
                 </p>
                 <div class="text-center lg:text-left">
-                    <button class="bg-[#dc780b] text-white px-4 py-2 rounded-md mt-5 mb-7 hover:scale-125 duration-500">Read More</button>
+                    <button class="bg-[#dc780b] text-white px-4 py-2 rounded-md font-bold mt-3 mb-4 hover:scale-125 duration-500">Read More</button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SECTION FOUR -->
-    <section id="menu" class="pt-20 md:px-14 lg:px-24">
+    <section id="menu" class="pt-12 md:px-14 lg:px-24">
         <div class="text-center">
             <h3 class="text-[#dc780b] text-xl pb-3">Menu</h3>
             <h5 class="capitalize font-bold lg:text-2xl">Delight in every dish</h5>
-            <p class="px-7 pt-5 md:px-10 lg:px-44 xl:px-72">
+            <p class="px-7 pt-3 md:px-10 lg:px-44 xl:px-72">
                 Explore our curated menu, crafted with the finest 
                 ingredients. Each dish is a celebration of flavor 
                 and passion!
             </p>
         </div>
-        <div class="pt-5 px-7 grid grid-cols-1 sm:grid-cols-2 sm:gap-6 md:grid-cols-2 md:gap-10 md:px-0 lg:grid-cols-3 lg:gap-7">
+        <div class=" px-7 grid grid-cols-1 sm:grid-cols-2 sm:gap-6 md:grid-cols-2 md:gap-10 md:px-0 lg:grid-cols-3 lg:gap-7">
             <div class="mt-4 border-2 rounded-tl-3xl rounded-3xl">
                 <img src="./img/vegie.jpg" alt="" class="min-w-full max-h-full rounded-3xl rounded-tl-3xl rounded-br-3xl">
                 <div class="p-5">
@@ -276,16 +282,16 @@
                 </div>       
             </div>
         </div>
-        <div class="text-center mt-5 mb-7 md:mt-7">
-            <button class="px-4 py-2 rounded-md border-2 border-orange-500 text-orange-500 hover:scale-125 duration-500">Learn More</button>
+        <div class="text-center mt-5 md:mt-7">
+            <button class="px-4 py-2 font-bold rounded-md border-2 border-orange-500 text-orange-500 hover:scale-125 duration-500">Learn More</button>
         </div>
     </section>
 
     <!-- SECTION FIVE -->
-     <section id="testimonial" class="pt-20 pb-10 md:px-14 lg:px-24">
+     <section id="testimonial" class="pt-12 pb-10 md:px-14 lg:px-24">
         <div class="px-7">
             <div>
-                <div class="text-center pb-5">
+                <div class="text-center pb-3">
                     <h3 class="text-[#dc780b] text-xl pb-3">Testimonial</h3>
                     <h5 class="capitalize font-bold text-center lg:text-2xl">Real stories, real flavors, real customer love.</h5>
                 </div>
@@ -297,7 +303,7 @@
             </div>
             <div class="relative">
                 <ul id="slider">
-                    <li class="h-[50vh] relative sm:h-[43vh] md:h-[43vh] lg:h-[50vh]">
+                    <li class="h-[50vh] ss:h-[70vh] relative sm:h-[43vh] md:h-[43vh] lg:h-[50vh]">
                         <div class="absolute top-0 left-0 h-full w-full flex">
                             <div class="text-black my-auto w-full text-center">
                                 <img class="w-14 h-14 rounded-full text-center block bg-contain ml-auto mr-auto" src="./img/review 4.jpg" alt="">
@@ -409,7 +415,7 @@
                 <input class="w-56 py-2 pl-3 pr-20 border-none rounded-md md:w-96 md:py-5 md:pl-6 md:pr-32 lg:w-96" id="message" type="text" placeholder="Enter your message" required>
             </div>
             <div class="absolute pl-40 md:pl-72">
-                <button class="bg-[#dc780b] rounded-md text-white px-5 py-2 md:px-8 md:py-5">Send</button>
+                <button class="bg-[#dc780b] rounded-md text-white font-bold px-5 py-2 md:px-8 md:py-5">Send</button>
             </div>
         </form>
 
@@ -439,12 +445,12 @@
             <div class="w-28">
                 <h6 class="text-xl font-bold pb-3">Links</h6>
                 <ul>
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>Features</li></a>
-                    <a href="#"><li>About us</li></a>
-                    <a href="#"><li>Menu</li></a>
-                    <a href="#"><li>Testimonial</li></a>
-                    <a href="#"><li>Contact</li></a> 
+                    <a href="#home"><li>Home</li></a>
+                    <a href="#features"><li>Features</li></a>
+                    <a href="#about_us"><li>About us</li></a>
+                    <a href="#menu"><li>Menu</li></a>
+                    <a href="#testimonial"><li>Testimonial</li></a>
+                    <a href="#contact"><li>Contact</li></a> 
                 </ul>
             </div>
             <div class="w-28">
